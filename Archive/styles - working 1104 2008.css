@@ -1,0 +1,298 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FF8E30;
+    line-height: 1.6;
+    padding-top: 60px; /* space for the fixed header */
+    background-color: #44434A;
+}
+
+header {
+    background: #44434A;
+    color: #FF8E30;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    display: flex; /* Use flexbox to align children */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FF8E30;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #271291;
+}
+
+/* Section Styles */
+.section-padding {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+/* Home Section Styles */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+}
+
+.home-background {
+    background: url('../images/Inset-Cube-Dark-Blue-and-Woodgrain-New-England-Oak.jpg') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    align-items: center; /* This vertically centers the inside content */
+    justify-content: center; /* This horizontally centers the inside content */
+}
+
+.home-content {
+    background: rgba(255, 255, 255, 0.288); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px; /* Adjust width as necessary */
+    text-align: center;
+}
+
+.home-content h2 {
+    margin: 0;
+    color: #FF8E30;
+}
+
+/* Projects Section */
+#projects {
+    background: #44434A;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    flex-basis: calc(33.333% - 20px);
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #44434A;
+    color: #FF8E30;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    margin: 20px;
+    position: relative;
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 5px;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-style: normal;
+}
+
+/* Contact Section Styles */
+#contact {
+    background: #44434A;
+    padding: 40px 0;
+    /* Removed text-align property from here to not apply center alignment by default */
+}
+
+#contact .container {
+    width: 100%;
+    max-width: 600px; /* Matches the form container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding on the sides */
+}
+
+/* Contact Information Styles */
+.contact-info {
+    text-align: left; /* Aligns text to the left */
+    margin-bottom: 20px;
+    padding: 0; /* Match the left padding to the form's left padding if necessary */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em; /* Adjust size as needed */
+    line-height: 1.6; /* This ensures proper spacing between lines */
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+/* Contact Form Header Styles */
+#contact h2 {
+    text-align: center; /* Only centering the header text */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    text-align: left; /* Only centering this paragraph */
+    margin-bottom: 40px;
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align the text to the left inside each form group */
+}
+
+#contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact .form-group input[type="text"],
+#contact .form-group input[type="tel"],
+#contact .form-group input[type="email"],
+#contact .form-group textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the inputs if container is wider */
+}
+
+#contact .form-group textarea {
+    height: 150px;
+}
+
+#contact button[type="submit"] {
+    padding: 10px 20px;
+    background: #3A4040;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background: #6B6560;
+}
+
+/* About Me Section Styles */
+#about-me {
+    padding: 40px 0;
+}
+
+  /* The container centers the row and gives it a max width */
+  #about-me .container {
+    max-width: 1200px; /* Set a max-width for the container if desired */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* The row contains the columns and clears their floats */
+  #about-me .row {
+    display: flex; /* Use flex display to align columns */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  }
+  
+  /* Define the style for each column */
+  #about-me .column {
+    flex: 1; /* Each column takes up an equal amount of space */
+    padding: 10px; /* Add some padding inside the columns */
+    background-color: #fff; /* White background for visibility */
+    margin: 5px; /* Add a little space between the columns */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow for depth */
+  }
+  
+  /* Additional styles for the text column */
+  #about-me .text-column {
+    /* You can add specific styles for the text column here if needed */
+  }
+  
+  /* Additional styles for the image column */
+  #about-me .image-column img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space below the image */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #about-me .row {
+        flex-direction: row;
+    }
+
+    #about-me .column {
+        padding: 0; /* Removes padding for mobile */
+    }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .project-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .project-item {
+        flex-basis: 100%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
