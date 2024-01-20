@@ -111,7 +111,7 @@ h2 {
     }
 }
 
-
+/*Styles for large screens*/
 .home-background .text-overlay {
     position: absolute;
     top: 50%;
@@ -131,6 +131,34 @@ h2 {
     margin: 0; /* Remove default margins if desired */
     /* Add any additional styling for your text here */
 }
+
+/*Media Queries for smaller screens*/
+@media (max-width: 768px) {
+    .home-background .text-overlay {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .home-background h1 {
+        font-size: 2.5em;
+    }
+
+    .home-background p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-background h1 {
+        font-size: 2em;
+    }
+
+    .home-background p {
+        font-size: 1.2em;
+    }
+}
+/*End of Media Queries for smaller screens*/
 
 .home-content {
     background: rgba(255, 255, 255, 0.288); /* Semi-transparent white background */
