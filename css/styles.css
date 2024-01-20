@@ -386,3 +386,49 @@ footer {
         margin: 0 10px;
     }
 }
+
+/* Mobile menu styles */
+.navbar {
+    /* Styles for your navbar */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: block; /* Keep the navigation links always visible on desktop */
+}
+
+.nav-links li {
+    display: inline-block; /* Display links inline on desktop */
+    /* Additional styles for list items */
+}
+
+/* Hide the menu toggle button by default (on desktop) */
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    /* Display the menu toggle button on mobile screens */
+    .menu-toggle {
+        display: block;
+        /* Additional styles for your menu toggle button */
+    }
+
+    /* Initially hide the navigation links on mobile screens */
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    /* Display the navigation links as block (stacked) on mobile screens */
+    .nav-links li {
+        display: block;
+        /* Additional styles for mobile list items */
+    }
+
+    /* When active, show the navigation links on mobile screens */
+    .nav-links.active {
+        display: block;
+    }
+}

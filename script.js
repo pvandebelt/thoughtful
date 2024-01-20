@@ -13,4 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Start the rotation
     setInterval(rotateImages, rotationInterval);
+
+// Code for menu toggle functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+   });
 });
