@@ -136,6 +136,7 @@ h2 {
 /*Media Queries for smaller screens*/
 @media (max-width: 768px) {
     .home-background .text-overlay {
+        top: 40%; /* Adjust vertical position */
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -151,6 +152,10 @@ h2 {
 }
 
 @media (max-width: 576px) {
+    .home-background .text-overlay {
+        top: 30%; /* Further adjust for even smaller screens */
+    }
+
     .home-background h1 {
         font-size: 2em;
     }
