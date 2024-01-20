@@ -67,7 +67,7 @@ h2 {
 #home {
     position: relative;
     width: 100%;
-    height: 80vw; /* Home section height 80% of the viewport width */
+    height: 80vh; /* Home section height 80% of the viewport height */
 }
 
 .home-background {
