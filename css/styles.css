@@ -390,6 +390,7 @@ footer {
 /* Mobile menu styles */
 .navbar {
     /* Styles for your navbar */
+    position: relative; /* For positioning the menu toggle button */
 }
 
 .nav-links {
@@ -405,6 +406,17 @@ footer {
 /* Hide the menu toggle button by default (on desktop) */
 .menu-toggle {
     display: none;
+    background-color: #FF8E30; /* Example: Change to match your theme */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Absolute positioning */
+    top: 10px; /* Position from top */
+    right: 10px; /* Position from right */
+    z-index: 1001; /* Above other elements */
 }
 
 /* Mobile styles */
@@ -412,19 +424,25 @@ footer {
     /* Display the menu toggle button on mobile screens */
     .menu-toggle {
         display: block;
-        /* Additional styles for your menu toggle button */
     }
 
     /* Initially hide the navigation links on mobile screens */
     .nav-links {
         display: none;
         width: 100%;
+        position: absolute; /* Position the menu */
+        background-color: #44434A; /* Background of the dropdown menu */
+        top: 60px; /* Position below the header */
+        left: 0;
+        z-index: 1000;
     }
 
     /* Display the navigation links as block (stacked) on mobile screens */
     .nav-links li {
         display: block;
-        /* Additional styles for mobile list items */
+        text-align: center; /* Center align the links */
+        padding: 10px 0; /* Padding for each link */
+        border-bottom: 1px solid #FF8E30; /* Optional: border between links */
     }
 
     /* When active, show the navigation links on mobile screens */
