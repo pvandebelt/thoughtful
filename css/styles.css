@@ -71,13 +71,15 @@ h2 {
     height: calc(80vh - 60px); /* Adjusted height to account for the margin-top */
 }
 
-.home-background {
-    height: 100%;
-    display: flex;
-    align-items: center; /* Vertically centers the inside content */
-    justify-content: center; /* Horizontally centers the inside content */
-    position: relative; /* Required for absolute positioning of child images */
-    overflow: hidden; /* Prevents images from overflowing the container */
+.home-background img {
+    width: 100%;
+    height: 100%; /* Adjust height to cover the section */
+    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .home-background img {
