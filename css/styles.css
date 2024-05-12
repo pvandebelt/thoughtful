@@ -462,3 +462,14 @@ footer {
 #about-me img {
     margin: 20px;        /* Adds margin around images to separate from text */
 }
+
+#about-me .image-column img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #about-me .column {
+        flex: 100%; /* Make each column take the full width */
+    }
+}
