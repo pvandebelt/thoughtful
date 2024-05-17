@@ -504,3 +504,53 @@ img {
         padding: 0; /* Reduces padding in text columns for more space */
     }
 }
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .home-background .text-overlay {
+        top: 40%; /* Adjust vertical position */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .home-background h1 {
+        font-size: 2.5em;
+    }
+
+    .home-background p {
+        font-size: 1.5em;
+    }
+
+    /* Update for about-me section images on small screens */
+    #about-me img {
+        width: 100%; /* Ensure images are full width */
+        max-width: none; /* Removes any max-width restriction */
+        float: none; /* Disable floating for images */
+        display: block; /* Ensures images are block level */
+        margin: 20px 0; /* Adds vertical space above and below each image */
+    }
+
+    #about-me .column {
+        padding: 0; /* Removes padding for columns */
+    }
+}
+
+@media (max-width: 576px) {
+    .home-background .text-overlay {
+        top: 30%; /* Further adjust for even smaller screens */
+    }
+
+    .home-background h1 {
+        font-size: 2em;
+    }
+
+    .home-background p {
+        font-size: 1.2em;
+    }
+
+    /* Additional specific adjustments if needed */
+    #about-me img {
+        margin: 15px 0; /* Adjust margin for very small screens */
+    }
+}
