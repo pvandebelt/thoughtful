@@ -460,7 +460,10 @@ footer {
 
 /* Ensures images in the About Me section do not have text too close to them */
 #about-me img {
-    margin: 20px;        /* Adds margin around images to separate from text */
+    width: 100%;
+    max-width: 800px;  // Ensures the image is not wider than 800px even on larger screens
+    height: auto;
+    margin: 20px;  // Ensures space around images to avoid text clutter
 }
 
 #about-me .image-column img {
@@ -469,7 +472,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-    #about-me .column {
-        flex: 100%; /* Make each column take the full width */
+    #about-me img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;  // Center images and add margin below
     }
+}
+
+#about-me img.full-width {
+    width: 100%;
+    max-width: none; /* Removes max-width restriction */
+    height: auto;
+    margin: 0 auto; /* Centers the image */
 }
