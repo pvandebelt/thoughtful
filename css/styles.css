@@ -485,3 +485,22 @@ footer {
     height: auto;
     margin: 0 auto; /* Centers the image */
 }
+
+img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any extra space below the image */
+    margin-bottom: 20px; /* Adds some space below each image */
+}
+
+@media (max-width: 768px) {
+    img {
+        float: none; /* Stops images from floating on small screens */
+        width: 100%; /* Full width for better mobile viewing */
+        margin: 10px 0; /* Adjusts top and bottom margin for spacing */
+    }
+
+    .about-me .column {
+        padding: 0; /* Reduces padding in text columns for more space */
+    }
+}
