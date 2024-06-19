@@ -71,118 +71,13 @@ h2 {
     height: calc(80vh - 60px); /* Adjusted height to account for the margin-top */
 }
 
-.home-background {
-    height: 100%;
-    display: flex;
-    align-items: center; /* Vertically centers the inside content */
-    justify-content: center; /* Horizontally centers the inside content */
-    position: relative; /* Required for absolute positioning of child images */
-    overflow: hidden; /* Prevents images from overflowing the container */
-}
-
-.home-background img {
-    width: 100%;
-    height: 100%; /* Adjust height to cover the section */
-    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.home-background img.active {
-    /* Only show the image with the active class */
-    display: block;
-    animation: zoomAndSlide 5s ease-in-out forwards; /* Apply the zoom and slide-in animation, match with the js script timer for rotating images */
-}
-
-/* Keyframes for image zoom and slide-in effect */
-@keyframes zoomAndSlide {
-    0% {
-        transform: scale(1.1); /* Start with the original size */
-        opacity: 0.7;
-    }
-    5% {
-        transform: scale(1.1); /* Zoom in without moving */
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.1) translateX(5%); /* Finish sliding to the right while staying zoomed in */
-    }
-}
-
-/*Styles for large screens*/
-.home-background .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%); /* This centers the text div */
-    color: white; /* Choose a text color that makes the text stand out over your images */
-    text-align: left; /* Center the text within the text div */
-    z-index: 2; /* Ensure it's above the images */
-}
-
-.home-background h1 {
-        font-size: 4em;
-}
-
-.home-background p {
-    font-size: 3em;
-    margin: 0; /* Remove default margins if desired */
-    /* Add any additional styling for your text here */
-}
-
-/*Media Queries for smaller screens*/
-@media (max-width: 768px) {
-    .home-background .text-overlay {
-        top: 40%; /* Adjust vertical position */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .home-background h1 {
-        font-size: 2.5em;
-    }
-
-    .home-background p {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 576px) {
-    .home-background .text-overlay {
-        top: 30%; /* Further adjust for even smaller screens */
-    }
-
-    .home-background h1 {
-        font-size: 2em;
-    }
-
-    .home-background p {
-        font-size: 1.2em;
-    }
-}
-/*End of Media Queries for smaller screens*/
-
-.home-content {
-    background: rgba(255, 255, 255, 0.288); /* Semi-transparent white background */
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 600px; /* Adjust width as necessary */
-    text-align: center;
-}
-
-.home-content h2 {
-    margin: 0;
-    color: #FF8E30;
-}
 
 /* Projects Section */
 #projects {
     background: #44434A;
-    padding-top: 0px;
+    padding-top: 60px;
+    padding-left: 40px; /* Add padding to the left */
+    padding-right: 40px; /* Add padding to the right */
 }
 
 .project-gallery {
@@ -192,15 +87,66 @@ h2 {
 }
 
 .project-item {
-    flex-basis: calc(33.333% - 20px);
+    flex-basis: calc(50% - 20px);
     margin: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: none;
 }
 
 .project-item img {
     width: 100%;
     height: auto;
     display: block;
+    cursor: pointer;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.lightbox-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%; /* Ensure the image does not overflow the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image is fully visible within the lightbox */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Testimonials Section */

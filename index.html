@@ -24,28 +24,38 @@
         </nav>
     </header>
    
-<!-- Home Section -->
+<!-- Home Section
 <section id="home">
     <div class="home-background">
         <img src="images/home_background/patio1.jpg" class="active">
         <img src="images/home_background/patio.jpg">
         <img src="images/home_background/bathroom 2.jpg">
 
-         <!-- Text Overlay -->
+         Text Overlay
+    </div>
+</section> -->
+
+<!-- Rest of your HTML follows -->
+<section id="projects" class="section-padding">
+    <h2>Latest Projects</h2>
+    <div class="project-gallery">
+        <!-- Placeholder for project images; you will replace these with actual images -->
+        <div class="project-item"><img src="images/home_background/patio1a.jpg" alt="Patio Construction" onclick="openLightbox(this)"></div>
+        <div class="project-item"><img src="images/home_background/entrya.jpg" alt="Entry" onclick="openLightbox(this)"></div>
+        <div class="project-item"><img src="images/home_background/bathroom_2a.jpg" alt="Bathroom" onclick="openLightbox(this)"></div>
+        <div class="project-item"><img src="images/home_background/Inverted_Logo_With_Background_And_Primary_Color.jpg" alt="Logo" onclick="openLightbox(this)"></div>
+        <div class="project-item"><img src="images/home_background/kitchen.jpg" alt="Kitchen" onclick="openLightbox(this)"></div>
+        <div class="project-item"><img src="images/home_background/patio_adj.jpg" alt="Finished Patio" onclick="openLightbox(this)"></div>
     </div>
 </section>
 
-<!-- Rest of your HTML follows -->
-    <section id="projects" class="section-padding">
-        <h2>Latest Projects</h2>
-        <div class="project-gallery">
-            <!-- Placeholder for project images; you will replace these with actual images -->
-            <div class="project-item"><img src="images/4e01d8aebb1eb1c3e8a227b7d7506cc4-2736708960.jpg" alt="Project 1"></div>
-            <div class="project-item"><img src="images/house-design-interior-decorating-1466387179.jpg" alt="Project 2"></div>
-            <div class="project-item"><img src="images/Top-BedRoom-Design-For-Royal-Look-2756451695.jpg" alt="Project 3"></div>
-            <!-- Add more as needed -->
-        </div>
-    </section>
+<!-- Lightbox structure -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="">
+    </div>
+</div>
 
     <section id="testimonials" class="section-padding">
         <h2>Testimonials</h2>
