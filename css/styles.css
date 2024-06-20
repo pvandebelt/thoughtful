@@ -10,7 +10,7 @@ body {
     color: #FF8E30;
     line-height: 1.6;
     background-color: #44434A;
-    padding-top: 100px; /* Adjusted to accommodate the new header and title bar layout */
+    padding-top: 120px; /* Adjusted to accommodate the new header and title bar layout */
 }
 
 header {
@@ -83,7 +83,7 @@ header {
     transition: top 0.3s;
     position: fixed;
     width: 100%;
-    top: 60px; /* Adjust according to your navbar height */
+    top: 50px; /* Adjust according to your navbar height */
     z-index: 999;
 }
 
