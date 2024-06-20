@@ -9,12 +9,15 @@ function closeLightbox() {
 }
 
 // Code for menu toggle functionality
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', function() {
-    navLinks.classList.toggle('active');
+    menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+    });
 });
+
 
 // Ensure the lightbox is hidden on page load
 document.addEventListener('DOMContentLoaded', function() {
