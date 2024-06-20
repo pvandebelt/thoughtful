@@ -59,6 +59,9 @@ header {
         float: right;
         display: block;
     }
+    .title-bar {
+        top: 50px; /* Adjust this value if needed for smaller screens */
+    }
 }
 
 @media screen and (max-width: 600px) {
