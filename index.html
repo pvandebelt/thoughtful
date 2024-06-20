@@ -11,17 +11,19 @@
 <body>
 
 <header>
-    <h1>Thoughtful Home Remodeling</h1>
-    <nav class="navbar">
-        <button class="menu-toggle">Menu</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html#testimonials" class="smooth-scroll">Testimonials</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="index.html#contact" class="smooth-scroll">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="navbar" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#testimonials" class="smooth-scroll">Testimonials</a>
+        <a href="about.html">About Me</a>
+        <a href="index.html#contact" class="smooth-scroll">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="title-bar" id="title-bar">
+        <h1>Thoughtful Home Remodeling</h1>
+    </div>
 </header>
 
 <section id="projects" class="section-padding">

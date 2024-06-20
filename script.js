@@ -8,16 +8,30 @@ function closeLightbox() {
     document.getElementById('lightbox').style.display = "none";
 }
 
-// Code for menu toggle functionality
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+// Responsive menu functionality
+function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
 
-    menuToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function () {
+    const titleBar = document.getElementById('title-bar');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            titleBar.classList.add('hidden');
+        } else {
+            titleBar.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
 });
-
 
 // Ensure the lightbox is hidden on page load
 document.addEventListener('DOMContentLoaded', function() {

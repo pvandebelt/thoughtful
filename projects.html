@@ -9,19 +9,21 @@
 </head>
 <body>
 
-<header>
-    <h1>Thoughtful Home Remodeling</h1>
-    <nav class="navbar">
-        <button class="menu-toggle">Menu</button>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="index.html#testimonials" class="smooth-scroll">Testimonials</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="index.html#contact" class="smooth-scroll">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <div class="navbar" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#testimonials" class="smooth-scroll">Testimonials</a>
+            <a href="about.html">About Me</a>
+            <a href="index.html#contact" class="smooth-scroll">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="title-bar" id="title-bar">
+            <h1>Thoughtful Home Remodeling</h1>
+        </div>
+    </header>
 
 <section id="projects" class="section-padding">
     <h2>Featured Projects</h2>
@@ -39,10 +41,19 @@
     </div>
 </section>
 
+<!-- Lightbox structure -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="">
+    </div>
+</div>
+
 <footer>
     <p>&copy; 2024 Thoughtful Home Remodeling</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js"></script>    
+
 </body>
 </html>

@@ -9,20 +9,23 @@
 </head>
 <body>
 
-<header>
-    <h1>Thoughtful Remodeling</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="index.html#testimonials">Testimonials</a></li>
-            <li><a href="about.html" class="active">About Me</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <div class="navbar" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#testimonials" class="smooth-scroll">Testimonials</a>
+            <a href="about.html" class="active">About Me</a>
+            <a href="index.html#contact" class="smooth-scroll">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="title-bar" id="title-bar">
+            <h1>Thoughtful Home Remodeling</h1>
+        </div>
+    </header>
 
-<section id="about-me">
+<section id="about-me" class="section-padding">
     <div class="container">
         <img src="images/about_me/about_me_1b.jpg" alt="Daniel Fros" class="full-width">
         <div class="row">
@@ -69,12 +72,7 @@
     <p>&copy; 2024 Thoughtful Home Remodeling</p>
 </footer>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var navHeight = document.querySelector('header').offsetHeight; // Get the height of the header
-        document.body.style.paddingTop = navHeight + 'px'; // Set the padding-top of the body
-    });
-    </script>    
+<script src="script.js"></script>    
 
 </body>
 </html>
