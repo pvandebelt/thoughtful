@@ -14,10 +14,10 @@ function toggleMenu() {
     var titleBar = document.getElementById('title-bar');
     if (x.className === "navbar") {
         x.className += " responsive";
-        titleBar.style.top = '0'; // Move the title bar up when the menu is active
+        titleBar.classList.add('hidden-completely'); // Hide the title bar completely when the menu is active
     } else {
         x.className = "navbar";
-        titleBar.style.top = '50px'; // Reset the title bar position when the menu is closed
+        titleBar.classList.remove('hidden-completely'); // Show the title bar when the menu is closed
     }
 }
 

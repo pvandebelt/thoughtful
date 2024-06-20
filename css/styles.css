@@ -53,12 +53,6 @@ header {
     display: none;
 }
 
-/* Adjusting the title bar when the menu is active */
-.navbar.responsive + .title-bar {
-    top: 0; /* Adjust to move the title bar out of view when the menu is active */
-    transition: top 0.3s;
-}
-
 @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
@@ -95,6 +89,10 @@ header {
 
 .title-bar.hidden {
     top: -100px; /* Adjust to move the title bar out of view */
+}
+
+.title-bar.hidden-completely {
+    display: none; /* Hide the title bar completely */
 }
 
 .section-padding {
