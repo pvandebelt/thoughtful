@@ -75,6 +75,12 @@ header {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .title-bar {
+        top: 50px; /* Adjust this value if needed for smaller screens */
+    }
+}
+
 .title-bar {
     background: #FF8E30;
     color: #44434A;
