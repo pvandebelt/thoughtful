@@ -10,7 +10,7 @@ body {
     color: #FF8E30;
     line-height: 1.6;
     background-color: #44434A;
-    padding-top: 120px; /* Adjusted to accommodate the new header and title bar layout */
+    padding-top: 150px; /* Adjusted to accommodate the new header and title bar layout */
 }
 
 header {
