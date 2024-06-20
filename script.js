@@ -19,4 +19,25 @@ menuToggle.addEventListener('click', function() {
 // Ensure the lightbox is hidden on page load
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('lightbox').style.display = "none";
+
+    // Testimonial Carousel
+    let testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.classList.remove('active');
+            if (i === index) {
+                testimonial.classList.add('active');
+            }
+        });
+    }
+
+    function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(currentIndex);
+    }
+
+    setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
+    showTestimonial(currentIndex);
 });
