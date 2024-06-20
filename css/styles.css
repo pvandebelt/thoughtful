@@ -59,9 +59,6 @@ header {
         float: right;
         display: block;
     }
-    .title-bar {
-        top: 50px; /* Adjust this value if needed for smaller screens */
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -91,7 +88,7 @@ header {
 }
 
 .title-bar.hidden {
-    top: -100px; /* Adjust to move the title bar out of view */
+    top: -200px; /* Adjust to move the title bar out of view */
 }
 
 .title-bar.hidden-completely {
