@@ -97,6 +97,7 @@ h2 {
     height: auto;
     display: block;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Lightbox styles */
@@ -499,4 +500,8 @@ img {
     #about-me img {
         margin: 15px 0; /* Adjust margin for very small screens */
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
