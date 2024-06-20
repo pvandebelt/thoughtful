@@ -22,11 +22,10 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-bottom: 1px solid #FF8E30; /* Replace #yourColor with the color you want */
-
-    display: flex; /* Use flexbox to align children */
-    justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
+    border-bottom: 1px solid #FF8E30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
@@ -63,21 +62,12 @@ h2 {
     font-size: 2.2em;
 }
 
-/* Home Section Styles */
-#home {
-    position: relative;
-    width: 100%;
-    margin-top: 60px; /* Added margin-top to push the section below the header */
-    height: calc(80vh - 60px); /* Adjusted height to account for the margin-top */
-}
-
-
 /* Projects Section */
 #projects {
     background: #44434A;
     padding-top: 60px;
-    padding-left: 40px; /* Add padding to the left */
-    padding-right: 40px; /* Add padding to the right */
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .project-gallery {
@@ -111,9 +101,9 @@ h2 {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
-    display: flex; /* Use flexbox to center content */
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lightbox-content {
@@ -122,7 +112,7 @@ h2 {
     padding: 20px;
     width: auto;
     max-width: 90%;
-    max-height: 90%; /* Ensure the image does not overflow the viewport */
+    max-height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +120,7 @@ h2 {
 
 .lightbox-content img {
     max-width: 100%;
-    max-height: 100%; /* Ensure the image is fully visible within the lightbox */
+    max-height: 100%;
 }
 
 .close {
@@ -177,52 +167,44 @@ h2 {
 #contact {
     background: #44434A;
     padding: 40px 0;
-    /* Removed text-align property from here to not apply center alignment by default */
 }
 
 #contact .container {
     width: 100%;
-    max-width: 600px; /* Matches the form container width */
-    margin: 0 auto; /* Center the container */
-    padding: 0 15px; /* Add some padding on the sides */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* Contact Information Styles */
 .contact-info {
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
     margin-bottom: 20px;
-    padding: 0; /* Match the left padding to the form's left padding if necessary */
+    padding: 0;
 }
 
 .contact-info p {
     margin: 10px 0;
-    font-size: 1.1em; /* Adjust size as needed */
-    line-height: 1.6; /* This ensures proper spacing between lines */
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 .contact-info i {
     margin-right: 8px;
 }
 
-/* Contact Form Header Styles */
 #contact h2 {
-    text-align: center; /* Only centering the header text */
+    text-align: center;
     margin-bottom: 20px;
 }
 
 #contact p {
-    text-align: left; /* Only centering this paragraph */
+    text-align: left;
     margin-bottom: 40px;
 }
 
 #contact .form-group {
     margin-bottom: 15px;
-    text-align: left; /* Align the text to the left inside each form group */
-}
-
-#contact .form-group label {
-    display: block;
-    margin-bottom: 5px;
+    text-align: left;
 }
 
 #contact .form-group label {
@@ -234,11 +216,11 @@ h2 {
 #contact .form-group input[type="tel"],
 #contact .form-group input[type="email"],
 #contact .form-group textarea {
-    width: calc(100% - 20px); /* Full width minus padding */
+    width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 0 auto; /* Center the inputs if container is wider */
+    margin: 0 auto;
 }
 
 #contact .form-group textarea {
@@ -264,51 +246,43 @@ h2 {
     padding: 40px 0;
 }
 
-  /* The container centers the row and gives it a max width */
-  #about-me .container {
-    max-width: 1200px; /* Set a max-width for the container if desired */
-    margin: 0 auto; /* Center the container */
-  }
-  
-  /* The row contains the columns and clears their floats */
-  #about-me .row {
-    display: flex; /* Use flex display to align columns */
-    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
-  }
-  
-  /* Define the style for each column */
-  #about-me .column {
-    flex: 1; /* Each column takes up an equal amount of space */
-    padding: 10px; /* Add some padding inside the columns */
-    background-color: #44434a; /* White background for visibility */
-    margin: 5px; /* Add a little space between the columns */
-    box-shadow: none; /* Add a subtle shadow for depth */
-  }
-  
-  /* Additional styles for the text column */
-  #about-me .text-column {
-    /* You can add specific styles for the text column here if needed */
-  }
-  
-  /* Additional styles for the image column */
-  #about-me .image-column img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add space below the image */
-  }
+#about-me .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
+#about-me .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-me .column {
+    flex: 1;
+    padding: 10px;
+    background-color: #44434a;
+    margin: 5px;
+    box-shadow: none;
+}
+
+#about-me .text-column {
+}
+
+#about-me .image-column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
     #about-me .row {
         flex-direction: row;
     }
 
     #about-me .column {
-        padding: 0; /* Removes padding for mobile */
+        padding: 0;
     }
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -317,7 +291,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive Grid */
 @media (max-width: 768px) {
     .project-item {
         flex-basis: calc(50% - 20px);
@@ -328,7 +301,6 @@ footer {
     .project-item {
         flex-basis: 100%;
     }
-
     nav ul li {
         margin: 0 10px;
     }
@@ -336,81 +308,71 @@ footer {
 
 /* Mobile menu styles */
 .navbar {
-    /* Styles for your navbar */
-    position: relative; /* For positioning the menu toggle button */
+    position: relative;
 }
 
 .nav-links {
     list-style-type: none;
-    display: block; /* Keep the navigation links always visible on desktop */
+    display: block;
 }
 
 .nav-links li {
-    display: inline-block; /* Display links inline on desktop */
-    /* Additional styles for list items */
+    display: inline-block;
 }
 
-/* Hide the menu toggle button by default (on desktop) */
 .menu-toggle {
     display: none;
-    background-color: #FF8E30; /* Example: Change to match your theme */
-    color: white; /* Button text color */
-    padding: 10px 15px; /* Padding inside the button */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Text size */
-    cursor: pointer; /* Pointer cursor on hover */
-    position: absolute; /* Absolute positioning */
-    top: 10px; /* Position from top */
-    right: 10px; /* Position from right */
-    z-index: 1001; /* Above other elements */
+    background-color: #FF8E30;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
 }
 
-/* Mobile styles */
 @media screen and (max-width: 600px) {
-    /* Display the menu toggle button on mobile screens */
     .menu-toggle {
         display: block;
     }
 
-    /* Initially hide the navigation links on mobile screens */
     .nav-links {
         display: none;
         width: 100%;
-        position: absolute; /* Position the menu */
-        background-color: #44434A; /* Background of the dropdown menu */
-        top: 60px; /* Position below the header */
+        position: absolute;
+        background-color: #44434A;
+        top: 60px;
         left: 0;
         z-index: 1000;
     }
 
-    /* Display the navigation links as block (stacked) on mobile screens */
     .nav-links li {
         display: block;
-        text-align: center; /* Center align the links */
-        padding: 10px 0; /* Padding for each link */
-        border-bottom: 1px solid #FF8E30; /* Optional: border between links */
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #FF8E30;
     }
 
-    /* When active, show the navigation links on mobile screens */
     .nav-links.active {
         display: block;
     }
 }
 
-/* Specific styling for paragraphs in the About Me section */
 #about-me p {
-    margin-top: 20px;    /* Adds space above each paragraph */
-    margin-bottom: 20px; /* Adds space below each paragraph */
-    line-height: 1.6;    /* Adjusts the line height for better readability */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Ensures images in the About Me section do not have text too close to them */
 #about-me img {
     width: 100%;
-    max-width: 800px;  // Ensures the image is not wider than 800px even on larger screens
+    max-width: 800px;
     height: auto;
-    margin: 20px;  // Ensures space around images to avoid text clutter
+    margin: 20px;
 }
 
 #about-me .image-column img {
@@ -422,40 +384,39 @@ footer {
     #about-me img {
         float: none;
         display: block;
-        margin: 0 auto 20px;  // Center images and add margin below
+        margin: 0 auto 20px;
     }
 }
 
 #about-me img.full-width {
     width: 100%;
-    max-width: none; /* Removes max-width restriction */
+    max-width: none;
     height: auto;
-    margin: 0 auto; /* Centers the image */
+    margin: 0 auto;
 }
 
 img {
-    width: 100%; /* Ensures the image takes the full width of its container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Removes any extra space below the image */
-    margin-bottom: 20px; /* Adds some space below each image */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
     img {
-        float: none; /* Stops images from floating on small screens */
-        width: 100%; /* Full width for better mobile viewing */
-        margin: 10px 0; /* Adjusts top and bottom margin for spacing */
+        float: none;
+        width: 100%;
+        margin: 10px 0;
     }
 
     .about-me .column {
-        padding: 0; /* Reduces padding in text columns for more space */
+        padding: 0;
     }
 }
 
-/* Media Queries for smaller screens */
 @media (max-width: 768px) {
     .home-background .text-overlay {
-        top: 40%; /* Adjust vertical position */
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -469,23 +430,22 @@ img {
         font-size: 1.5em;
     }
 
-    /* Update for about-me section images on small screens */
     #about-me img {
-        width: 100%; /* Ensure images are full width */
-        max-width: none; /* Removes any max-width restriction */
-        float: none; /* Disable floating for images */
-        display: block; /* Ensures images are block level */
-        margin: 20px 0; /* Adds vertical space above and below each image */
+        width: 100%;
+        max-width: none;
+        float: none;
+        display: block;
+        margin: 20px 0;
     }
 
     #about-me .column {
-        padding: 0; /* Removes padding for columns */
+        padding: 0;
     }
 }
 
 @media (max-width: 576px) {
     .home-background .text-overlay {
-        top: 30%; /* Further adjust for even smaller screens */
+        top: 30%;
     }
 
     .home-background h1 {
@@ -496,9 +456,8 @@ img {
         font-size: 1.2em;
     }
 
-    /* Additional specific adjustments if needed */
     #about-me img {
-        margin: 15px 0; /* Adjust margin for very small screens */
+        margin: 15px 0;
     }
 }
 
