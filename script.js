@@ -61,3 +61,17 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
     showTestimonial(currentIndex);
 });
+
+//Debuggin
+window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    console.log("scrollTop:", scrollTop, "lastScrollTop:", lastScrollTop);
+    if (scrollTop > lastScrollTop) {
+        console.log("Scrolling down");
+        titleBar.classList.add('hidden');
+    } else {
+        console.log("Scrolling up");
+        titleBar.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
